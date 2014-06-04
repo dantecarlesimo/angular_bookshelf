@@ -3,10 +3,7 @@ var BookCtrl = function($scope) {
     $scope.books = [];
    
     $scope.addBook = function() {
-    $scope.books.push({title: $scope.book.title, 
-      author: $scope.book.author, 
-      isbn: $scope.book.isbn, 
-      description: $scope.book.description});  
+    $scope.books.push($scope.book);  
     $scope.book = "";
     };
 
@@ -16,3 +13,8 @@ var BookCtrl = function($scope) {
     }
 
 };
+
+// {title: $scope.book.title, 
+//       author: $scope.book.author, 
+//       isbn: $scope.book.isbn, 
+//       description: $scope.book.description}
